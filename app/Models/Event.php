@@ -5,19 +5,14 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class company extends Model
+class Event extends Model
 {
     use HasFactory;
 
-
     protected $fillable = [
         'name',
-        'category',
-        'address',
-        'description'
-    ];
-    protected $hidden = [
-
-
+        'subject',
+        'date',
+        'location'
     ];
 }
